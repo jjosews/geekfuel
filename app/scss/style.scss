@@ -209,6 +209,54 @@
   }
 }
 
+.top{
+  padding: 117px 0;
+  background-color: $accent;
+  color: #fff;
+  background-image: url('../images/top-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center right;
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    width: 1060px;
+    height: 600px;
+    bottom: -1px;
+    right: 0;
+    background-image: url('../images/shirt.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &__container{
+    max-width: 1470px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  &__inner{
+  }
+  &__title{
+    @extend %din-700;
+    font-size: 100px;
+    line-height: 91px;
+    margin-bottom: 30px;
+    max-width: 322px;
+  }
+  &__text{
+    margin-bottom: 50px;
+    max-width: 378px;
+  }
+  &__link{
+    color: $text;
+    background-color: #fff;
+    padding: 20px 44px;
+    @extend %din-700;
+    font-size: 22px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
+
 
 
 @import 'media';
