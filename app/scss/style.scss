@@ -3,7 +3,211 @@
 @import 'reset';
 @import 'global';
 
+.header{
+  padding: 20px 0;
+  &__container{
+    max-width: 1740px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__nav-list{
+    display: flex;
+  }
+  &__nav-item{
+    &:nth-child(1){
+      .header__nav-link{
+        padding-right: 18px;
+        &::before{
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          top: 1px;
+          right: 0;
+          background-image: url('../images/icons/plus-sign.svg');
+        }
+      }
+    }
+    &:nth-child(2){
+      .header__nav-link{
+        padding-right: 18px;
+        &::before{
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          top: 1px;
+          right: 0;
+          background-image: url('../images/icons/plus-sign.svg');
+        }
+      }
+    }
+    &:nth-child(4){
+      .header__nav-link{
+        padding-left: 20px;
+        &::before{
+          content: '';
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          top: -2px;
+          left: 0;
+          background-image: url('../images/icons/gift-icon.svg');
+        }
+      }
+    }
+    & + .header__nav-item{
+      margin-left: 50px;
+    }
+  }
+  &__nav-link{
+    color: $text;
+    @extend %graphik-500;
+    font-size: 14px;
+    line-height: 15px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  &__box{
+    display: flex;
+    align-items: center;
+  }
+  &__login{
+    color: $text;
+    @extend %graphik-500;
+    font-size: 14px;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin-right: 50px;
+  }
+  &__search{
+    margin-right: 50px;
+  }
+  &__box-user{
+    display: flex;
+  }
+  &__heart{
+    margin-right: 50px;
+  }
+}
 
+.footer{
+  background-color: #262425;
+  color: #fff;
+  &__top{
+    padding: 100px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  &__top-inner{
+    display: flex;
+  }
+  &__top-logo{
+    margin-right: 150px;
+  }
+  &__logo-link{
+    width: 264px;
+    height: 60px;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    & + .footer__item{
+      margin-left: 95px;
+    }
+  }
+  &__item-link{
+    color: #fff;
+    text-transform: uppercase;
+    @extend %graphik-500;
+    font-size: 14px;
+    line-height: 15px;
+    margin-bottom: 34px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__box{
+    width: 280px;
+    margin-left: auto;
+  }
+  &__box-title{
+    @extend %graphik-500;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+  &__box-form{
+    position: relative;
+    margin-bottom: 50px;
+  }
+  &__box-input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 20px;
+    outline: none;
+    caret-color: #fff;
+    &::placeholder{
+      font-size: 16px;
+      color: #fff;
+      opacity: 0.4;
+    }
+  }
+  &__box-btn{
+    position: absolute;
+    top: 4px;
+    right: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    path{
+      transition: all .3s ease-in-out;
+    }
+    &:hover{
+      path{
+        fill: $accent;
+      }
+    }
+  }
+  &__socials-list{
+    display: flex;
+    align-items: center;
+  }
+  &__socials-item{
+    path{
+      transition: all .3s ease-in-out;
+    }
+    & + .footer__socials-item{
+      margin-left: 30px;
+    }
+    &:hover{
+      path{
+        fill: $accent;
+      }
+    }
+  }
+  &__bottom{
+    padding: 22px 0;
+  }
+  &__bottom-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__bottom-copy,
+  &__bottom-link{
+    color: #fff;
+    opacity: 0.4;
+    font-size: 14px;
+    line-height: 15px;
+  }
+}
 
 
 

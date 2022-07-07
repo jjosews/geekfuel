@@ -1,4 +1,17 @@
-%roboto-700{
-  font-family: 'Roboto-Bold', sans-serif;
+$accent: #FF5050;
+$text: #0D0D0D;
+
+%graphik-400{
+  font-family: 'Graphik-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%graphik-500{
+  font-family: 'Graphik-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%din-700{
+  font-family: 'DINPro-CondensedBold', sans-serif;
   font-weight: 700;
 }

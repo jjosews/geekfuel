@@ -77,10 +77,10 @@ function watching() {
   watch(['app/**/*.html']).on('change', browserSync.reload);
 }
 
-gulp.task('fonts', function() {
-  return gulp.src('app/fonts/**/*')
-    .pipe(gulp.dest('dist/fonts'))
-})
+function fonts() {
+  return src('app/fonts/**/*')
+    .pipe(dest('dist/fonts'))
+}
 
 
 exports.styles = styles;
@@ -89,6 +89,6 @@ exports.browsersync = browsersync;
 exports.watching = watching;
 exports.images = images;
 exports.cleanDist = cleanDist;
-exports.build = series(cleanDist, images, build);
+exports.build = series(cleanDist, images, fonts, build);
 
 exports.default = parallel(styles, scripts, browsersync, watching);
