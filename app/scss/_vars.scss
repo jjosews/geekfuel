@@ -15,3 +15,10 @@ $text: #0D0D0D;
   font-family: 'DINPro-CondensedBold', sans-serif;
   font-weight: 700;
 }
+
+%title{
+  @extend %din-700;
+  font-size: 60px;
+  line-height: 55px;
+  text-transform: uppercase;
+}
