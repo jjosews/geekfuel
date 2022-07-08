@@ -22,3 +22,11 @@ $text: #0D0D0D;
   line-height: 55px;
   text-transform: uppercase;
 }
+
+%checkbox-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
