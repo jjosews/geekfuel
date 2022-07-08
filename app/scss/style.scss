@@ -671,6 +671,45 @@
   }
 }
 
+.month{
+  padding: 100px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    max-width: 416px;
+  }
+  &__title{
+    @extend %title;
+    margin-bottom: 40px;
+  }
+  &__text-box{
+    opacity: 0.6;
+    margin-bottom: 40px;
+  }
+  &__text{
+    margin-bottom: 17px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__link{
+    display: inline-block;
+    color: #fff;
+    background-color: $accent;
+    @extend %din-700;
+    font-size: 22px;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 20px 38px;
+  }
+  &__imgbox{
+    padding: 60px 0;
+    background-color: #F1F4F9;
+  }
+}
+
 
 
 @import 'media';
