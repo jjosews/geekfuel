@@ -848,6 +848,7 @@
     justify-content: center;
   }
   &__label{
+    cursor: pointer;
     & + .designs__label{
       margin-left: 8px;
     }
@@ -888,6 +889,86 @@
   &__checkbox--white::before{
     border: 1px solid #E0E0E0;
     background-color: #fff;
+  }
+}
+
+.compliment{
+  padding: 100px 0;
+  background-color: #f8f8f8;
+  text-align: center;
+  &__title{
+    @extend %din-700;
+    font-size: 20px;
+    line-height: 18px;
+    color: $accent;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+}
+
+.swiper-compliment{
+  .swiper-wrapper{
+    padding-bottom: 70px;
+  }
+  .swiper-slide-active{
+    transition: all .3s ease-in-out;
+  }
+  .swiper-slide-prev{
+    transform: translateX(-135px);
+    opacity: 0.2;
+    transition: all .3s ease-in-out;
+  }
+  .swiper-slide-next{
+    transform: translateX(135px);
+    opacity: 0.2;
+    transition: all .3s ease-in-out;
+  }
+  .swiper-pagination{
+    bottom: 0;
+  }
+  .swiper-pagination-bullet{
+    border: 1px solid $text;
+    background-color: transparent;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: $text;
+  }
+  &__blockquote{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    @extend %graphik-500;
+    font-size: 30px;
+    line-height: 33px;
+    margin-bottom: 30px;
+  }
+  &__author{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    @extend %din-700;
+    font-size: 20px;
+    line-height: 18px;
+    opacity: 0.4;
+    text-transform: uppercase;
+  }
+}
+
+.partners{
+  padding: 100px 0;
+  &__title{
+    @extend %din-700;
+    font-size: 20px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
