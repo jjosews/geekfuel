@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>GeekFuel</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -13,22 +13,35 @@
   <header class="header">
     <div class="header__container">
       <div class="header__inner">
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="#">TEE CLUB</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="#">SHOP</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="#">GHOSTBUSTERS</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="#">GIFT</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="header__wrapper">
+          <button class="burder" data-burger aria-label="Open the menu" aria-expanded="false">
+            <span class="burder__line"></span>
+          </button>
+          <a class="header__wrapper-search" href="#">
+            <img class="header__search-img" src="images/icons/search-icon.svg" alt="search icon">
+          </a>
+        </div>
+        <div class="header__nav-box" data-nav>
+          <div class="header__nav" >
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">TEE CLUB</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">SHOP</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">GHOSTBUSTERS</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">GIFT</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__nav-login">
+            <a class="header__nav-login__link" href="#">login</a>
+          </div>
+        </div>
         <a class="header__logo" href="#">
           <img class="header__logo-img" src="images/logo.png" alt="logo icon">
         </a>
@@ -586,17 +599,19 @@
               <img class="footer__logo-img" src="images/logo-white.png" alt="logo icon">
             </a>
           </div>
-          <div class="footer__item">
-            <a class="footer__item-link" href="#">bundles</a>
-            <a class="footer__item-link" href="#">exclusive tees</a>
-            <a class="footer__item-link" href="#">mondo</a>
-            <a class="footer__item-link" href="#">collectibles</a>
-          </div>
-          <div class="footer__item">
-            <a class="footer__item-link" href="#">TEE CLUB</a>
-            <a class="footer__item-link" href="#">GHOSTBUSTERS</a>
-            <a class="footer__item-link footer__item-link--gift" href="#">GIFT</a>
-            <a class="footer__item-link" href="#">login</a>
+          <div class="footer__items">
+            <div class="footer__item">
+              <a class="footer__item-link" href="#">bundles</a>
+              <a class="footer__item-link" href="#">exclusive tees</a>
+              <a class="footer__item-link" href="#">mondo</a>
+              <a class="footer__item-link" href="#">collectibles</a>
+            </div>
+            <div class="footer__item">
+              <a class="footer__item-link" href="#">TEE CLUB</a>
+              <a class="footer__item-link" href="#">GHOSTBUSTERS</a>
+              <a class="footer__item-link footer__item-link--gift" href="#">GIFT</a>
+              <a class="footer__item-link" href="#">login</a>
+            </div>
           </div>
           <div class="footer__box">
             <h3 class="footer__box-title">

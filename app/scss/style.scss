@@ -6,6 +6,12 @@
 
 .header{
   padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #fff;
   &__container{
     max-width: 1740px;
     padding: 0 10px;
@@ -15,6 +21,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  &__wrapper{
+    display: none;
+  }
+  &__wrapper-search{
+    display: none;
   }
   &__nav-list{
     display: flex;
@@ -73,6 +85,15 @@
     line-height: 15px;
     text-transform: uppercase;
     position: relative;
+    border: none;
+    background-color: transparent;
+  }
+  &__nav-item__list{
+    display: none;
+  }
+  &__nav-login__link{
+    display: none;
+    @extend %graphik-500;
   }
   &__box{
     display: flex;
@@ -97,6 +118,10 @@
   }
 }
 
+.burder{
+  display: none;
+}
+
 .footer{
   background-color: #262425;
   color: #fff;
@@ -113,6 +138,9 @@
   &__logo-link{
     width: 264px;
     height: 60px;
+  }
+  &__items{
+    display: flex;
   }
   &__item{
     display: flex;
@@ -261,6 +289,7 @@
     max-width: 378px;
   }
   &__link{
+    display: inline-block;
     color: $text;
     background-color: #fff;
     padding: 20px 44px;
@@ -527,6 +556,8 @@
       height: 34px;
       top: 0;
       left: 0;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
     &:nth-child(1)::before{
       background-image: url('../images/content/day/info-1.svg');
@@ -717,6 +748,16 @@
   background-position: center center;
   padding: 100px 0;
   color: #fff;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url('../images/slider-bg-linear.png');
+  }
   .swiper-slide{
     padding: 200px 0;
     &__toptitle{

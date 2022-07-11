@@ -30,3 +30,10 @@ $text: #0D0D0D;
   clip: rect(0 0 0 0);
   position: absolute;
 }
+
+@media (max-width: 620px){
+  %title{
+    font-size: 36px !important;
+    line-height: 32px !important;
+  }
+}
