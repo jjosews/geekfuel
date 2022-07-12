@@ -12,6 +12,7 @@
   right: 0;
   z-index: 1000;
   background-color: #fff;
+  border-bottom: 1px solid #E0E1E2;
   &__container{
     max-width: 1740px;
     padding: 0 10px;
@@ -87,6 +88,14 @@
     position: relative;
     border: none;
     background-color: transparent;
+    cursor: pointer;
+    text-align: left;
+  }
+  &__navbox-btn{
+    @extend %graphik-500;
+  }
+  &__navbox{
+    display: none;
   }
   &__nav-item__list{
     display: none;

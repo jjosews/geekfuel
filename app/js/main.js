@@ -1,8 +1,18 @@
 $(function(){
 
+  $('.header__nav-link--btn').on('click', function(){
+    $('.header__nav-box').addClass('header__boxnav--visible');
+  });
+  $('.header__navbox-btn').on('click', function(){
+    $('.header__nav-box').removeClass('header__boxnav--visible');
+  });
+  $('.header__nav-item--link').on('click', function(){
+    $('.header__nav-box').removeClass('header__boxnav--visible');
+  });
+
   const burger = document?.querySelector('[data-burger]');
   const nav = document?.querySelector('[data-nav]');
-  const navItems = nav?.querySelectorAll('.header__nav-item, .header__nav-login');
+  const navItems = nav?.querySelectorAll('.header__nav-item--link');
   const body = document.body;
   const header = document?.querySelector('.header');
   const headerHeight = header.offsetHeight;
